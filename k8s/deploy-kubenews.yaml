@@ -72,11 +72,11 @@ metadata:
 spec:
   selector:
     app: kubenews-webapp
-  type: NodePort
+  type: LoadBalancer
   ports:
     - port: 8080
       protocol: TCP
       targetPort: 8080
-      nodePort: 30000
+      #nodePort: 30000
       name: http
 
