@@ -13,3 +13,14 @@ jobs:
         run: echo "Docker Build chatservice"
       - name: Docker Build webapp 
         run: echo "Docker Build webapp"
+
+  CD:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Autenticar AWS CLI
+        run: echo "Configurar o AWS CLI"
+      - name: Configuração do kubectl 
+        run: echo "Configurar o kubectl"
+      - name: Deploy das Aplicações
+        run: echo "Executar o comando Apply do kubectl nos arquivos de manifesto"
