@@ -16,7 +16,7 @@ jobs:
           file: ./src/Dokerfile
           push: true
           tags: |
-            3mmessias/kube-news:v1
+            3mmessias/kube-news:v${{ github.run_number }}
             3mmessias/kube-news:latest
 
   CD:
