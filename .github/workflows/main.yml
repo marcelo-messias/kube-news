@@ -10,6 +10,6 @@ jobs:
     steps:
       - uses: action/checkout@v3
       - name: Docker Build chatservice 
-        run: echo "Docker Build chatservice"
+        run: echo "Docker Build chatservice "
       - name: Docker Build webapp 
         run: echo "Docker Build webapp"
