@@ -14,7 +14,6 @@ jobs:
         with:
          username: ${{ secrets.DOKERHUB_USR }}
          password: ${{ secrets.DOKERHUB_PWD }}
-         registry: ""
       - name: Docker Build kube news 
         uses: docker/build-push-action@v4.1.1
         with:
