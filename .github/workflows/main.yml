@@ -9,10 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Docker Build chatservice 
-        run: echo "Docker Build chatservice"
-      - name: Docker Build webapp 
-        run: echo "Docker Build webapp"
+      - name: Docker Build kube news 
+        uses: docker/build-push-action@v4.1.1
+        with:
+          context: ./src
+          file: ./src/Dokerfile
+          push: true
+          tags: |
+            3mmessias/kube-news:v1
+            3mmessias/kube-news:latest
 
   CD:
     runs-on: ubuntu-latest
