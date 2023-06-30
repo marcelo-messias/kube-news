@@ -18,7 +18,7 @@ jobs:
         uses: docker/build-push-action@v4.1.1
         with:
           context: ./src
-          file: ./src/Dokerfile
+          file: ./src/Dockerfile
           push: true
           tags: |
             3mmessias/kube-news:v${{ github.run_number }}
